@@ -34,7 +34,6 @@ public class People {
             Person p1 = new Student("Jon Doe",21,"UCLA"); //Subsumption: First Polymorphism form
 
             System.out.println(p1); //At run-time, the Student ToString method is invoked; This occurs due to Dynamic Dispatching 
-
         }
     }
 }
