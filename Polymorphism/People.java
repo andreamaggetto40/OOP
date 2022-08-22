@@ -28,14 +28,13 @@ public class People {
             return super.toString() + "College is : " + college;
         }
         /*
-         * A testing main for showcasing the main OOP features
+         * A testing main for showcasing how Polymorphism works
          */
         public static void main(String[] args) {
             Person p1 = new Student("Jon Doe",21,"UCLA"); //Subsumption: First Polymorphism form
 
             System.out.println(p1); //At run-time, the Student ToString method is invoked; This occurs due to Dynamic Dispatching 
 
-            
         }
     }
 }
