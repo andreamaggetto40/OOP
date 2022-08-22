@@ -1,5 +1,8 @@
 package Polymorphism;
 
+/*
+ * The below class is an instance to provide the first kind of Objects Polymorphism: Subtyping
+ */
 public class People {
     public static class Person{ 
         @NotNull protected String name;
@@ -28,7 +31,7 @@ public class People {
             return super.toString() + "College is : " + college;
         }
         /*
-         * A testing main for showcasing how Polymorphism works
+         * Testing main
          */
         public static void main(String[] args) {
             Person p1 = new Student("Jon Doe",21,"UCLA"); //Subsumption: First Polymorphism form
