@@ -24,7 +24,6 @@ public class FunctionalProgramming {
     }
     public static class SimpleAmounter<T> implements Function<T,Integer>{
         private static int counter = 10;
-        
         @Override
         public Integer apply(T t) {
             return ++counter;
@@ -45,7 +44,7 @@ public class FunctionalProgramming {
 
         items.forEach((n) -> System.out.println(n)); //Lambda function: Consumer
 
-        List<Integer> lengths = map(new Iterable<String>(List.of("Hello","World","I'm","John","Doe")),new Function<String,Integer>() {
+        List<Integer> lengths = map(new Iterable<>(List.of("Hello","World","I'm","John","Doe")),new Function<String,Integer>() {
             @Override
             public Integer apply(String t) {
                 return t.length();
