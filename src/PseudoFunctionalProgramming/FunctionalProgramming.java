@@ -44,7 +44,7 @@ public class FunctionalProgramming {
 
         items.forEach((n) -> System.out.println(n)); //Lambda function: Consumer
 
-        List<Integer> lengths = map(new Iterable<>(List.of("Hello","World","I'm","John","Doe")),new Function<String,Integer>() {
+        List<Integer> lengths = map(new ArrayList<>(List.of("Hello","World","I'm","John","Doe")),new Function<String,Integer>() {
             @Override
             public Integer apply(String t) {
                 return t.length();
